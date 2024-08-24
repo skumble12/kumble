@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <!-- remixicon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- seo -->
+    <title>Shivshankar Kumble- Full-Stack Developer Portfolio</title>
+    <meta name="description" content="Explore Shivshankar Kumble's portfolio showcasing projects like Skills, projects and many more things">
+    <meta property="og:title" content="Shivshankar Kumble - Full-Stack Developer Portfolio">
+    <meta property="og:url" content="https://Shivshankar2003.github.io/Portfolio/">
+    <meta property="og:type" content="website">
+  </head>
+  <body>
+    <nav>
+      <div class="container" data-aos="fade-in" data-aos-duration="4000">
+        <a href="https://ghanasham2004.github.io/Portfolio/"
+          ><h1>Shivshankar <span>Kumble</span></h1></a
+        >
+        <div class="links" id="navLinks">
+          <a href="" class="link active">Home</a>
+          <a href="#skills" class="link" onclick="loadSkills()">Skills</a>
+          <a href="#about" class="link" onclick="loadAboutPage()">About</a>
+          <a href="#projects" class="link" onclick="loadProjectPage()"
+            >Projects</a
+          >
+          <a href="#contact" class="link" onclick="loadContactData()"
+            >Contact</a
+          >
+        </div>
+        <i class="ri-menu-line" onclick="toggleMenu()"></i>
+        <div class="actions">
+          <a href="#contact" onclick="loadContactData()"
+            >Let's Talk
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <main id="root">
+      <section id="hero" class="section-content">
+        <div class="container" data-aos="fade-up" data-aos-duration="800">
+          <div class="left">
+            <div class="name">
+              <div class="icons">
+                <a href="https://www.instagram.com/Kumbleshivshankar/">
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a href="https://github.com/Shivshankar2003"
+                  ><i class="ri-github-fill"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/Shivshankar-Kumble/">
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://twitter.com/Shivshankar2003"
+                  ><i class="ri-twitter-fill"></i
+                ></a>
+              </div>
+              <h1>👋 Hey there,</h1>
+              <h1 class="wave">It's Shivshankar Kumble.</h1>
+            </div>
+            <p>
+              <span> Welcome</span>
+              to my creative corner! I'm a passionate Full-Stack Developer with
+              expertise in both frontend and backend technologies. With a strong
+              foundation in various programming languages and a knack for
+              designing user-friendly applications, I strive to create digital
+              experiences that are both functional and aesthetically pleasing.
+            </p>
+            <div class="actions">
+              <a href="#contact" onclick="loadContactData()"
+                >Say Hello
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              
+            </div>
+          </div>
+          <div class="right">
+            <img src="Shiv.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section id="about" class="section-content">
+        <div class="container" data-aos="fade-up" data-aos-duration="800">
+          <div class="right">
+            <img src="./assets/about1.jpg" alt="about" />
+          </div>
+          <div class="left use-w">
+            <h1 class="fs">Digital Experiences with <br />Passion</h1>
+            <p class="w-f">
+              <span>A</span>
+              passionate Full-Stack Developer specializing in the MERN stack
+              (MongoDB, Express.js, React.js, Node.js) 🌟. With a strong
+              foundation in both frontend and backend technologies, I create
+              digital experiences that are functional and visually appealing. My
+              deep knowledge of languages like Java, Python, and C++ allows me
+              to build robust, scalable applications.
+            </p>
+            <p class="w-f">
+              <span>Crafting</span>
+              user-friendly web applications is my forte, and I love bringing
+              innovative ideas to life through clean, efficient code 🚀. Let's
+              collaborate and turn your vision into a digital reality!
+            </p>
+            <div class="actions">
+              <a href="#contact" onclick="loadContactData()"
+                >Let's Talk
+                <i class="ri-arrow-right-line"></i>
+              </a>
+              <a href="#projects" onclick="loadProjectPage()"
+                >Our Projects
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- my offerings for you  -->
+      <section id="offerings" class="section-content">
+        <div class="heading" data-aos="fade-up" data-aos-duration="400">
+          <h1>My Offerings for You</h1>
+        </div>
+        <div
+          class="offerings-container"
+          id="offerings-container"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        ></div>
+      </section>
+
+      <!-- skill sets here the programming languages in left scroll -->
+      <section id="skills" class="section-content">
+        <div class="heading center">
+          <h1>Skills & Expertise</h1>
+          <p>
+            With a strong foundation in various programming languages and
+            technologies, I create digital experiences that are both functional
+            and visually appealing.
+          </p>
+        </div>
+        <div class="skills-container" id="skills-container">
+          <div class="item">
+            <img src="./assets/logos/HTML5.png" alt="html" />
+          </div>
+        </div>
+      </section>
+
+      <!-- latest projects -->
+      <section id="projects" class="section-content">
+        <div class="heading" data-aos="fade-up" data-aos-duration="400">
+          <h1>Latest Project</h1>
+          <div class="actions">
+            <a href="#projects" onclick="loadProjectPage()"
+              >Let's See More
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="projects-container">
+          <div class="project" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="info">
+              <div class="left">
+                <p>Web Based</p>
+                <h1>GateKeeper - Student Entries Manager</h1>
+              </div>
+              <a href="https://gatekeeper-online.onrender.com/" target="_blank">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="thumbnail">
+              <img src="https://cdn.dribbble.com/userupload/13132563/file/original-f520c0050f5e1ec6625fddd2c5909539.jpg?resize=1024x800" alt="" />
+            </div>
+          </div>
+          <div class="project" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="info">
+              <div class="left">
+                <p>Web Based</p>
+                <h1>Netflix UI Design [ Movie Dashboard Design ]</h1>
+              </div>
+              <a href="https://github.com/Shivshankar2003/Netflix" target="_blank">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="thumbnail">
+              <img src="https://cdn.dribbble.com/userupload/7441977/file/original-5250b2d89febc1639ea5d89a09ea7912.jpeg?resize=752x752&vertical=center" alt="" />
+            </div>
+          </div>
+          <div class="project" data-aos="zoom-in" data-aos-duration="1200">
+            <div class="info">
+              <div class="left">
+                <p>Web Based</p>
+                <h1>Scorely - For Classes Rankers (Results)</h1>
+              </div>
+              <a href="#" onclick="alert('Coming Soon..')">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="thumbnail">
+              <img src="https://cdn.dribbble.com/userupload/14526398/file/original-1d6ecfc613bf1266d330388621551e4b.png?resize=1024x768" alt="" />
+            </div>
+          </div>
+          <div class="project" data-aos="zoom-in" data-aos-duration="1400">
+            <div class="info">
+              <div class="left">
+                <p>Console Based</p>
+                <h1>Airline Reservation System Java</h1>
+              </div>
+              <a href="#" onclick="alert('Coming Soon..')">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="thumbnail">
+              <img src="https://cdn.dribbble.com/users/1522014/screenshots/16275706/media/dc8bf6f0a8487d17c4f8e84c3bf5c5b5.png?resize=840x630&vertical=center" alt="" />
+            </div>
+          </div>
+          <div class="project" data-aos="zoom-in" data-aos-duration="1600">
+            <div class="info">
+              <div class="left">
+                <p>Web Based</p>
+                <h1>Hungry Hub-Food Ordering Website</h1>
+              </div>
+              <a href="https://github.com/E-Smarts/VG_Food_Ordering" onclick="alert('Coming Soon..')">
+                <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="thumbnail">
+              <img src="https://cdn.dribbble.com/userupload/3290255/file/original-84cdd6b0e6a7369d13d1fa032eef410d.png?resize=1024x768" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- project idea ? -->
+      <section id="ax" class="section-content">
+        <div class="container">
+          <h1>Have a project in <br />mind? Let's get to <br />work!👋🚀</h1>
+          <div class="actions">
+            <a href="#contact" onclick="loadContactData()"
+              >Let's Talk
+              <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="https://shivshankar2003.github.io/Portfolio/"
+              >My Portfolio
+              <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="icons">
+          <a href="https://www.instagram.com/shivshankar_2003/">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://github.com/Shivshankar2003"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/Shivshankar-Kumble/">
+            <i class="ri-linkedin-box-fill"></i>
+          </a>
+          <a href="https://twitter.com/Shivshankar2003"
+            ><i class="ri-twitter-fill"></i
+          ></a>
+        </div>
+        <div class="links">
+          <a href="/views/index.html" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scroll-top" onclick="scrollToTop()">
+      <i class="ri-arrow-up-s-line"></i>
+    </button>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="public/js/components.js"></script>
+    <script src="public/js/app.js"></script>
+  </body>
+</html>
